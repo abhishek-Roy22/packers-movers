@@ -72,7 +72,7 @@
             <div class="banner-right">
               <form action="" method="post">
                 <h3 class="text-center">
-                  Fill the form below & get your Home Shifting
+                  Fill the form below & get your <span id="element"></span>
                 </h3>
                 <input
                   type="text"
@@ -712,6 +712,24 @@
       </div>
     </footer>
 
+    <!-- typed -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed('#element', {
+        strings: [
+          'Home Shifting',
+          'Office Relocation',
+          'Warehousing & Storage',
+          'Packing & Unpacking',
+          'Vehicle Transport',
+          'Loading & Unloading',
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+
+    <!-- owl -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
