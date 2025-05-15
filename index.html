@@ -1,271 +1,692 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Packer - Remover</title>
-    <link rel="stylesheet" href="style.css">
-<!--Bootstrap Link-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-</head>
-<body>
-<!--Navbar-->
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
-    <div class="container">
+    <link rel="stylesheet" href="style.css" />
+    <!--Bootstrap Link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+      <div class="container">
         <a class="navbar-brand fs-2 fw-bold" href="#">packageMover!</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item me-2">
-                    <a class="btn btn-outline-light" aria-current="page" href="#">Call Now</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-light" href="#">WhatsApp</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<!--Main Content-->
-<main>
-    <section class="py-5" id="banner-section">
+        <ul class="navbar-nav ms-auto d-flex flex-row gap-3">
+          <li class="nav-item">
+            <a
+              class="btn btn-outline-light px-4 rounded-pill"
+              aria-current="page"
+              href="#"
+              >Call Now</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-light rounded-pill px-4" href="#">WhatsApp</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Main Content-->
+    <main>
+      <section class="py-5" id="banner-section">
         <div class="container">
-            <div class="d-flex flex-column flex-lg-row justify-content-center w-100 h-100">
-                <div class="banner-left">
-                    <h1 class="text-white display-5 fw-bold">
-                        We are India's largest fully integrated
-                        <span class="highlight">logistics services</span> provider
-                    </h1>
-                </div>
-                <div class="banner-right">
-                    <form action="" method="post">
-                        <h3><span class="fw-bold">Book</span> Your Order</h3>
-                        <input type="text" class="form-control" placeholder="Enter Your Name Here" required>
-                        <input type="email" class="form-control" placeholder="Enter Your Email Here">
-                        <input type="tel" class="form-control" placeholder="Enter Your Phone Here" min="10" required>
-                        <input type="text" class="form-control" name="pickup" placeholder="Pickup Location" required>
-                        <input type="text" class="form-control" name="drop" placeholder="Drop Location" required>
-                        <input type="submit" id="submit-btn" class="btn btn-dark" value="Book Order">
-                    </form>
-                </div>
+          <div
+            class="d-flex flex-column flex-lg-row justify-content-center w-100 h-100"
+          >
+            <div class="banner-left">
+              <h1 class="text-white display-5 fw-bold">
+                We are the best <span class="highlight">packers</span> and
+                <span class="highlight">movers</span> service provider in Bihar
+              </h1>
             </div>
+            <div class="banner-right">
+              <form action="" method="post">
+                <h3 class="text-center">
+                  Fill the form below & get your Home Shifting
+                </h3>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Your Name Here"
+                  required
+                />
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter Your Email Here"
+                />
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Enter Your Phone Here"
+                  min="10"
+                  required
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  name="pickup"
+                  placeholder="Enter Shifting From"
+                  required
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  name="drop"
+                  placeholder="Enter Shifting To"
+                  required
+                />
+                <input
+                  type="submit"
+                  id="submit-btn"
+                  class="btn btn-dark"
+                  value="Book Order"
+                />
+              </form>
+            </div>
+          </div>
         </div>
-    </section>
-    <section class="py-5">
+      </section>
+      <section class="py-5">
         <div class="container text-center">
-            <h3 class="p-0 m-0 mb-4 fs-2 fw-bold sub-title">Services That Power Our Solutions Ecosystem</h3>
+          <h3 class="p-0 m-0 mb-4 fs-2 fw-bold sub-title">
+            Services That Power Our Solutions Ecosystem
+          </h3>
 
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="./images/service1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Home Shifting
-                            </h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        </div>
-                    </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="./images/service1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Home Shifting</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="./images/service2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Office Relocation</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        </div>
-                    </div>
-                </div><div class="col-md-4">
-                    <div class="card">
-                        <img src="./images/service3.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Warehousing & Storage</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        </div>
-                    </div>
-                </div><div class="col-md-4">
-                    <div class="card">
-                        <img src="./images/service4.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Packing & Unpacking
-                            </h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        </div>
-                    </div>
-                </div><div class="col-md-4">
-                    <div class="card">
-                        <img src="./images/service5.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Vehicle Transport
-                            </h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        </div>
-                    </div>
-                </div><div class="col-md-4">
-                    <div class="card">
-                        <img src="./images/service6.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Loading & Unloading</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="./images/service2.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Office Relocation</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="./images/service3.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Warehousing & Storage</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="./images/service4.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Packing & Unpacking</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="./images/service5.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Vehicle Transport</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="./images/service6.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Loading & Unloading</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-
-    </section>
-    <!-- Stats Section -->
-    <section class="py-5 text-white mt-4" id="stats-section">
+      </section>
+      <!-- Stats Section -->
+      <section class="py-5 text-white mt-4" id="stats-section">
         <div class="container position-relative">
-            <div class="row g-4 text-center">
-                <div class="col-md-4">
-                    <div class="stat-card">
-                        <h3
-                                class="display-4 fw-bold counter text-white"
-                                data-target="5"
-                        >
-                            0
-                        </h3>
-                        <span class="display-4 ms-2 fw-bold text-white">+</span>
-                        <p class="h5 mt-3">Experiences</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="stat-card">
-                        <h3
-                                class="display-4 fw-bold counter text-white"
-                                data-target="500"
-                        >
-                            0
-                        </h3>
-                        <span class="display-4 ms-2 fw-bold text-white">+</span>
-                        <p class="h5 mt-3">Happy Customer</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="stat-card">
-                        <h3
-                                class="display-4 fw-bold counter text-white"
-                                data-target="150"
-                        >
-                            0
-                        </h3>
-                        <span class="display-4 ms-2 fw-bold text-white">+</span>
-                        <p class="h5 mt-3">City Covered</p>
-                    </div>
-                </div>
+          <div class="row g-4 text-center">
+            <div class="col-md-4">
+              <div class="stat-card">
+                <h3
+                  class="display-4 fw-bold counter text-white"
+                  data-target="5"
+                >
+                  0
+                </h3>
+                <span class="display-4 ms-2 fw-bold text-white">+</span>
+                <p class="h5 mt-3">Experiences</p>
+              </div>
             </div>
+            <div class="col-md-4">
+              <div class="stat-card">
+                <h3
+                  class="display-4 fw-bold counter text-white"
+                  data-target="500"
+                >
+                  0
+                </h3>
+                <span class="display-4 ms-2 fw-bold text-white">+</span>
+                <p class="h5 mt-3">Happy Customer</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="stat-card">
+                <h3
+                  class="display-4 fw-bold counter text-white"
+                  data-target="150"
+                >
+                  0
+                </h3>
+                <span class="display-4 ms-2 fw-bold text-white">+</span>
+                <p class="h5 mt-3">City Covered</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-<!--Why Section-->
-    <section class="py-5" id="why-section">
+      <!--Why Section-->
+      <section class="py-5" id="why-section">
         <div class="container text-center">
-            <h3 class="p-0 m-0 mb-4 fs-2 fw-bold sub-title">Why To Choose KrishanPackers&Movers</h3>
+          <h3 class="p-0 m-0 mb-4 fs-2 fw-bold sub-title">
+            Why To Choose KrishanPackers&Movers
+          </h3>
 
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="why-card">
-                        <div class="why-img">
-                        <img src="./images/trust.png" alt="...">
-                        </div>
-                        <div class="d-flex flex-column gap-3">
-                            <h5 class="card-title">Years of Trusted Service</h5>
-                            <p>Over 15 years of delivering safe, reliable, and efficient packing and moving services</p>
-                        </div>
-                    </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="why-card">
+                <div class="why-img">
+                  <img src="./images/trust.png" alt="..." />
                 </div>
-                <div class="col-md-4">
-                    <div class="why-card">
-                        <div class="why-img">
-                        <img src="./images/employees.png"  alt="...">
-                        </div>
-                        <div class="d-flex flex-column gap-3">
-                            <h5 class="card-title ">Expert Packing Team</h5>
-                            <p>Highly skilled professionals ensuring your belongings are packed and moved with utmost care</p>
-                        </div>
-                    </div>
-                </div><div class="col-md-4">
-                    <div class="why-card">
-                        <div class="why-img">
-                        <img src="./images/moving-truck.png"  alt="...">
-                        </div>
-                        <div class="d-flex flex-column gap-3">
-                            <h5 class="card-title">Modern Moving Equipment
-                            </h5>
-                            <p>We use the latest tools, trucks, and packing materials to ensure smooth and secure transportation.
-                            </p>
-                        </div>
-                    </div>
-                </div><div class="col-md-4">
-                    <div class="why-card">
-                        <div class="why-img">
-                        <img src="./images/personalized.png"  alt="...">
-                        </div>
-                        <div class="d-flex flex-column gap-3">
-                            <h5 class="card-title">Personalized Moving Plans
-                            </h5>
-                            <p>Tailored solutions to fit your specific needs — whether local, domestic, or corporate moves</p>
-                        </div>
-                    </div>
-                </div><div class="col-md-4">
-                    <div class="why-card">
-                        <div class="why-img">
-                        <img src="./images/financial-coverage.png"  alt="...">
-                        </div>
-                        <div class="d-flex flex-column gap-3">
-                            <h5 class="card-title">Wide Range of Services
-                            </h5>
-                            <p>From home shifting to office relocation, storage, and vehicle transport — we cover it all</p>
-                        </div>
-                    </div>
-                </div><div class="col-md-4">
-                    <div class="why-card">
-                        <div class="why-img">
-                        <img src="./images/social-responsibility.png"  alt="...">
-                        </div>
-                        <div class="d-flex flex-column gap-3">
-                            <h5 class="card-title">Trusted by Thousands
-                            </h5>
-                            <p>Over 10,000 happy customers who trust us for their hassle-free and timely moves.</p>
-                        </div>
-                    </div>
+                <div class="d-flex flex-column gap-3">
+                  <h5 class="card-title">Years of Trusted Service</h5>
+                  <p>
+                    Over 15 years of delivering safe, reliable, and efficient
+                    packing and moving services
+                  </p>
                 </div>
+              </div>
             </div>
+            <div class="col-md-4">
+              <div class="why-card">
+                <div class="why-img">
+                  <img src="./images/employees.png" alt="..." />
+                </div>
+                <div class="d-flex flex-column gap-3">
+                  <h5 class="card-title">Expert Packing Team</h5>
+                  <p>
+                    Highly skilled professionals ensuring your belongings are
+                    packed and moved with utmost care
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="why-card">
+                <div class="why-img">
+                  <img src="./images/moving-truck.png" alt="..." />
+                </div>
+                <div class="d-flex flex-column gap-3">
+                  <h5 class="card-title">Modern Moving Equipment</h5>
+                  <p>
+                    We use the latest tools, trucks, and packing materials to
+                    ensure smooth and secure transportation.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="why-card">
+                <div class="why-img">
+                  <img src="./images/personalized.png" alt="..." />
+                </div>
+                <div class="d-flex flex-column gap-3">
+                  <h5 class="card-title">Personalized Moving Plans</h5>
+                  <p>
+                    Tailored solutions to fit your specific needs — whether
+                    local, domestic, or corporate moves
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="why-card">
+                <div class="why-img">
+                  <img src="./images/financial-coverage.png" alt="..." />
+                </div>
+                <div class="d-flex flex-column gap-3">
+                  <h5 class="card-title">Wide Range of Services</h5>
+                  <p>
+                    From home shifting to office relocation, storage, and
+                    vehicle transport — we cover it all
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="why-card">
+                <div class="why-img">
+                  <img src="./images/social-responsibility.png" alt="..." />
+                </div>
+                <div class="d-flex flex-column gap-3">
+                  <h5 class="card-title">Trusted by Thousands</h5>
+                  <p>
+                    Over 10,000 happy customers who trust us for their
+                    hassle-free and timely moves.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    
-<!--Contact Section-->
-    <section class="py-5 px-2 px-md-0" id="contact-section">
+      </section>
+
+      <!--Contact Section-->
+      <section class="py-5 px-2 px-md-0" id="contact-section">
         <div class="container">
-            <h3 class="p-0 m-0 mb-4 fs-2 fw-bold sub-title text-center text-white text-decoration-underline link-offset-2">Feel Free To Talk!</h3>
-            <div class="row g-4">
-                <div class="col-md-7">
-                    <div class="contact-img">
-                        <img src="/images/map.webp" alt="map" class="img-fluid object-fit-cover">
-                    </div>
-                </div>
-                <div class="col-md-5" id="contact-form">
-                    <h4 class="fw-bold text-center fs-3 mb-3">Let's Connect</h4>
-                    <form action="" method="POST" class="d-flex flex-column gap-3">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-                        <input type="tel" class="form-control" id="phone" name="phone" min="10" placeholder="Phone No." required>
-                        <input type="email" class="form-control" id="email" name="email" min="10" placeholder="Email">
-                        <input type="text" class="form-control" id="pickup" name="pickup" placeholder="Pickup Location" required>
-                        <input type="text" class="form-control" id="drop" name="drop" placeholder="Drop Location" required>
-                        <button class="btn btn-dark">Submit</button>
-                    </form>
-                </div>
+          <h3
+            class="p-0 m-0 mb-4 fs-2 fw-bold sub-title text-center text-white text-decoration-underline link-offset-2"
+          >
+            Feel Free To Talk!
+          </h3>
+          <div class="row g-4">
+            <div class="col-md-7">
+              <div class="contact-img">
+                <img
+                  src="/images/map.webp"
+                  alt="map"
+                  class="img-fluid object-fit-cover"
+                />
+              </div>
             </div>
+            <div class="col-md-5" id="contact-form">
+              <h4 class="fw-bold text-center fs-3 mb-3">Let's Connect</h4>
+              <form action="" method="POST" class="d-flex flex-column gap-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  min="10"
+                  placeholder="Phone No."
+                  required
+                />
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  min="10"
+                  placeholder="Email"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="pickup"
+                  name="pickup"
+                  placeholder="Enter Shifting From"
+                  required
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="drop"
+                  name="drop"
+                  placeholder="Enter Shifting To"
+                  required
+                />
+                <button class="btn btn-dark">Submit</button>
+              </form>
+            </div>
+          </div>
         </div>
-    </section>
-</main>
+      </section>
 
-<footer></footer>
-<script src="index.js"></script>
-<!--Bootstrap Js-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-</body>
+      <!-- Google testimonials -->
+      <section class="container-fluid py-3" id="google-testimonial-section">
+        <div class="container mx-auto">
+          <div class="text-center d-flex flex-column mb-4">
+            <h3 class="fw-bold">Testimonials</h3>
+            <p class="fw-semibold">Ratings from real Customers</p>
+            <div class="d-flex align-items-center justify-content-center gap-2">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+              </div>
+              <p class="p-0 m-0">4.9 rating of 25856 reviews</p>
+            </div>
+          </div>
+
+          <div class="owl-carousel google-testimonial owl-theme">
+            <div class="item google-review-card">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="google-review-img">
+                    <img
+                      src="/images/user.webp"
+                      alt="user-img"
+                      class="img-fluid object-fit-cover"
+                    />
+                  </div>
+                  <span>Jon Doe</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Molestiae, saepe corporis ratione incidunt quibusdam, soluta
+                  consectetur esse nam doloremque earum exercitationem nihil
+                  perspiciatis consequatur
+                </p>
+              </div>
+            </div>
+            <div class="item google-review-card">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="google-review-img">
+                    <img
+                      src="/images/user.webp"
+                      alt="user-img"
+                      class="img-fluid object-fit-cover"
+                    />
+                  </div>
+                  <span>Jon Doe</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Molestiae, saepe corporis ratione incidunt quibusdam, soluta
+                  consectetur esse nam doloremque earum exercitationem nihil
+                  perspiciatis consequatur
+                </p>
+              </div>
+            </div>
+            <div class="item google-review-card">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="google-review-img">
+                    <img
+                      src="/images/user.webp"
+                      alt="user-img"
+                      class="img-fluid object-fit-cover"
+                    />
+                  </div>
+                  <span>Jon Doe</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Molestiae, saepe corporis ratione incidunt quibusdam, soluta
+                  consectetur esse nam doloremque earum exercitationem nihil
+                  perspiciatis consequatur
+                </p>
+              </div>
+            </div>
+            <div class="item google-review-card">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="google-review-img">
+                    <img
+                      src="/images/user.webp"
+                      alt="user-img"
+                      class="img-fluid object-fit-cover"
+                    />
+                  </div>
+                  <span>Jon Doe</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Molestiae, saepe corporis ratione incidunt quibusdam, soluta
+                  consectetur esse nam doloremque earum exercitationem nihil
+                  perspiciatis consequatur
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Float-icon -->
+    <a href="tel:1234567890" id="phone">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <a href="https://wa.me/918102959631 Hello!" id="whatsapp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Floating Enquire btn -->
+    <div
+      class="position-fixed top-50 left-0 z-4"
+      id="btn-cover"
+      data-bs-toggle="modal"
+      data-bs-target="#appointmentModal"
+    >
+      <button id="floating-btn" class="btn text-white fw-semibold">
+        Enquire Now
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="appointmentModal"
+      tabindex="-1"
+      aria-labelledby="appointmentModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 overflow-hidden">
+          <div class="modal-body p-0">
+            <button
+              type="button"
+              class="btn-close position-absolute end-0 top-0"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="row g-0">
+              <div class="col-md-6 d-none d-md-block">
+                <img
+                  src="./images/service1.png"
+                  alt="Hair Transformation"
+                  class="img-fluid h-100 object-fit-cover"
+                />
+              </div>
+              <div class="col-md-6 p-4">
+                <h2
+                  class="mb-3 border-bottom border-2 rounded text-center fw-bold text-danger"
+                >
+                  Enquire Now
+                </h2>
+                <form
+                  id="appointmentForm"
+                  action="send_email.php"
+                  method="POST"
+                >
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Name*"
+                      name="name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="Enter Mobile Number*"
+                      name="phone"
+                      min="10"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <textarea
+                      class="form-control"
+                      rows="3"
+                      placeholder="Message"
+                      name="message"
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-danger primary-btn w-100 mb-3"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!--Bootstrap Js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="index.js"></script>
+  </body>
 </html>
