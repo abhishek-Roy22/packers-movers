@@ -76,14 +76,10 @@ a {
 
 #stats-section {
   /* position: relative; */
-  background-image: linear-gradient(
-    to right top,
-    #ff3131,
-    #fe6d00,
-    #ee9c00,
-    #d2c600,
-    #a8eb12
-  );
+  background-image: url('/images/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 #stats-section .container {
@@ -183,6 +179,16 @@ a {
   height: 40px;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.call {
+  background-color: teal !important;
+  color: white !important;
+}
+
+.message {
+  background-color: green !important;
+  color: white !important;
 }
 
 #phone {
