@@ -216,8 +216,12 @@ a {
 }
 
 #floating-btn {
+  position: fixed;
+  top: 50%;
   transform: rotate(-90deg);
   background-color: teal;
+  left: -30px !important;
+  z-index: 999999;
 }
 
 @media screen and (max-width: 768px) {
