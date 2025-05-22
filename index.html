@@ -136,7 +136,7 @@
             <div class="col-md-4">
               <div class="card">
                 <img
-                  src="./images/service1.png"
+                  src="./images/service05.jpg"
                   class="card-img-top"
                   alt="..."
                 />
@@ -152,7 +152,7 @@
             <div class="col-md-4">
               <div class="card">
                 <img
-                  src="./images/service2.png"
+                  src="./images/service06.jpg"
                   class="card-img-top"
                   alt="..."
                 />
@@ -168,7 +168,7 @@
             <div class="col-md-4">
               <div class="card">
                 <img
-                  src="./images/service3.png"
+                  src="./images/service04.jpg"
                   class="card-img-top"
                   alt="..."
                 />
@@ -184,7 +184,7 @@
             <div class="col-md-4">
               <div class="card">
                 <img
-                  src="./images/service4.png"
+                  src="./images/service03.jpg"
                   class="card-img-top"
                   alt="..."
                 />
@@ -200,7 +200,7 @@
             <div class="col-md-4">
               <div class="card">
                 <img
-                  src="./images/service5.png"
+                  src="./images/service02.jpg"
                   class="card-img-top"
                   alt="..."
                 />
@@ -216,7 +216,7 @@
             <div class="col-md-4">
               <div class="card">
                 <img
-                  src="./images/service6.png"
+                  src="./images/service01.jpg"
                   class="card-img-top"
                   alt="..."
                 />
@@ -404,7 +404,6 @@
                 <input
                   type="tel"
                   class="form-control"
-                  id="phone"
                   name="phone"
                   min="10"
                   placeholder="Phone No."
@@ -690,41 +689,53 @@
 
     <footer class="w-100 bg-dark py-5">
       <div class="container">
-        <div class="d-flex align-items-center justify-content-between">
-          <div class="d-flex flex-column gap-2 w-50">
-            <h5 class="text-white fw-semibold">Krishan Packers & Movers</h5>
-            <p class="text-white">
-              We are the best packers and movers service provider in Bihar. We
-              provide a wide range of services to make your shifting process
-              smooth and hassle-free. Our team consists of well-trained and
-              verified professionals who use top-quality packing materials to
-              ensure safe and secure relocation.
-            </p>
-            <p class="text-white">Adampur Bhagalpur, Bihar, 812001</p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="d-flex flex-column gap-2">
+              <h5 class="text-white fw-semibold">Krishan Packers & Movers</h5>
+              <p class="text-white w-100 w-md-50">
+                We are the best packers and movers service provider in Bihar. We
+                provide a wide range of services to make your shifting process
+                smooth and hassle-free. Our team consists of well-trained and
+                verified professionals who use top-quality packing materials to
+                ensure safe and secure relocation.
+              </p>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-location-dot fa-lg text-white"></i>
+                <p class="text-white">Adampur Bhagalpur, Bihar, 812001</p>
+              </div>
+            </div>
           </div>
 
-          <a href="tel:+91-9234668175" class="fw-semibold btn btn-outline-light"
-            >+91-9234668175</a
-          >
+          <div class="col-md-4">
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-phone-volume fa-lg text-white"></i>
+              <a href="tel:+91-9234668175" class="fw-semibold text-decoration-none text-white"
+              >+91-9234668175</a
+              >
+            </div>
+          </div>
 
-          <button
-            class="btn btn-light"
-            data-bs-toggle="modal"
-            data-bs-target="#appointmentModal"
-          >
-            Let's Talk
-          </button>
+          <div class="col-md-4">
+            <button
+                    class="btn btn-light"
+                    data-bs-toggle="modal"
+                    data-bs-target="#appointmentModal"
+            >
+              Let's Talk
+            </button>
+          </div>
         </div>
         <hr class="text-light" />
         <div class="text-center">
           <p class="text-white">
             All right reserved &copy; KrishanPackers&Movers & Developed by
             <a
-              href="https://www.linkedin.com/in/abhishek-roy-b211a8231/"
-              target="_blank"
-              ><strong class="text-danger fw-bold"
-                ><i>Abhishek Roy</i></strong
-              ></a
+                    href="https://www.linkedin.com/in/abhishek-roy-b211a8231/"
+                    target="_blank"
+            ><strong class="text-danger fw-bold"
+            ><i>Abhishek Roy</i></strong
+            ></a
             >
           </p>
         </div>
@@ -739,12 +750,13 @@
         strings: [
           'Home Shifting',
           'Office Relocation',
-          'Warehousing & Storage',
-          'Packing & Unpacking',
+          'Warehousing Storage',
+          'Packing Unpacking',
           'Vehicle Transport',
-          'Loading & Unloading',
+          'Loading Unloading',
         ],
         typeSpeed: 100,
+        loop: true,
       });
     </script>
 
